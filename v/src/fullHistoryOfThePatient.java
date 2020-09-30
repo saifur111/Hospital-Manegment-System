@@ -4,11 +4,19 @@
  * and open the template in the editor.
  */
 import Project.ConnectionProvider;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 import java.sql.*;
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 import static javax.swing.JTable.AUTO_RESIZE_OFF;
+import javax.swing.table.DefaultTableColumnModel;
+import javax.swing.table.TableCellRenderer;
+import javax.swing.table.TableColumn;
+import javax.swing.table.TableColumnModel;
 import net.proteanit.sql.DbUtils;
 /**
  *
@@ -21,9 +29,39 @@ public class fullHistoryOfThePatient extends javax.swing.JFrame {
      */
     Connection con=null;
     public fullHistoryOfThePatient() {
+       
         initComponents();
+//        Toolkit toolkit=getToolkit();
+//        Dimension size =toolkit.getScreenSize();
+//        setLocation(size.width/2-getWidth()/2,size.height/2-getHeight()/2);
+         getContentPane().setBackground(new java.awt.Color(246,249,246));
+         
+         
+         
+         
+         
+         
+         
+
+      
+
+    
+    
+    
+         
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -38,25 +76,34 @@ public class fullHistoryOfThePatient extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(184, 270));
+        setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(1185, 462));
         addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentShown(java.awt.event.ComponentEvent evt) {
                 formComponentShown(evt);
             }
         });
 
+        jTable1.setBackground(new java.awt.Color(246, 249, 246));
+        jTable1.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        jTable1.setForeground(new java.awt.Color(128, 128, 128));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {},
+                {},
+                {},
+                {}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+
             }
         ));
+        jTable1.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
         jScrollPane1.setViewportView(jTable1);
 
+        jButton1.setBackground(new java.awt.Color(147, 26, 37));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Close");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,7 +115,7 @@ public class fullHistoryOfThePatient extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 739, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1184, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)
@@ -81,7 +128,7 @@ public class fullHistoryOfThePatient extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         pack();
@@ -106,6 +153,11 @@ public class fullHistoryOfThePatient extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    
+    
+    
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -115,6 +167,11 @@ public class fullHistoryOfThePatient extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
+        
+        
+        
+        
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -146,4 +203,12 @@ public class fullHistoryOfThePatient extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
+
+
+
+
+
+
+
+
 }
